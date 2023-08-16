@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/13e759ec6f.js" crossorigin="anonymous"></script>
+    <title>My Text Editor</title>
+</head>
+<body>
+    <header>
+        <h3 class="mt-8 text-center text-2xl font-bold">My Text Editor</h3>
+    </header>
+    <main class="bg-sky-200 p-4 m-8 w-6/12 mx-auto border-2 border-gray-600">
+        <section>
+            <div class="mb-4 flex justify-between">
+                <div>
+                    <button id="btn-bold" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-bold"></i></button>
+                    <button id="btn-italic" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-italic"></i></button>
+                    <button id="btn-underline" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-underline"></i></button>
+                </div>
+                <div>
+                    <button id="btn-left" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-align-left"></i></button>
+                    <button id="btn-center" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-align-center"></i></button>
+                    <button id="btn-right" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-align-right"></i></button>
+                    <button id="btn-justify" class="px-2 py-1 text-xs focus:bg-sky-600 focus:ring focus:ring-sky-300 rounded-lg"><i class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input type="number" id="text-size" class="outline-none w-12 pl-2 text-base" min="15" placeholder="14">
+                    <input type="color" value="#000000" id="text-color" class="px-1 focus:bg-sky-600 focus:ring focus:ring-sky-300 focus:rounded-lg">
+                </div>
+            </div>
+            <div class="border-t-2 border-gray-600 mb-2"></div>
+            <textarea id="input-field" cols="30" rows="10" class="w-full outline-none p-4 text-sm"></textarea>
+        </section>
+    </main>
+    <script src="./editor.js"></script>
+</body>
+</html>
